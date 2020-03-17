@@ -1,0 +1,113 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title "PWR_Supply"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1550 3500 1700 1750
+U 5E71155E
+F0 "5V" 50
+F1 "5V.sch" 50
+F2 "VCC" I L 1550 3750 50 
+F3 "GND" I L 1550 4050 50 
+F4 "5V" I L 1550 4250 50 
+$EndSheet
+Wire Wire Line
+	1550 3750 1150 3750
+Wire Wire Line
+	1150 3750 1150 2850
+Wire Wire Line
+	1150 1650 3550 1650
+$Sheet
+S 3700 3500 1700 1700
+U 5E711FC7
+F0 "3.3V" 50
+F1 "3.3V.sch" 50
+F2 "VCC" I L 3700 3700 50 
+F3 "+3.3" I L 3700 3850 50 
+F4 "GND" I L 3700 4000 50 
+$EndSheet
+Wire Wire Line
+	1150 2850 3400 2850
+Wire Wire Line
+	3400 2850 3400 3700
+Wire Wire Line
+	3400 3700 3700 3700
+Connection ~ 1150 2850
+Wire Wire Line
+	1150 2850 1150 1650
+$Sheet
+S 3700 5500 1700 1350
+U 5E712456
+F0 "Sheet5E712455" 50
+F1 "12V.sch" 50
+F2 "VCC" I L 3700 5700 50 
+F3 "+12" I L 3700 5900 50 
+F4 "GND" I L 3700 6050 50 
+$EndSheet
+Wire Wire Line
+	1150 3750 1150 5650
+Wire Wire Line
+	1150 5650 1550 5650
+Connection ~ 1150 3750
+Wire Wire Line
+	3400 3700 3400 5700
+Wire Wire Line
+	3400 5700 3700 5700
+Connection ~ 3400 3700
+Text GLabel 950  3250 0    50   Input ~ 0
+MCU_Bus
+$Sheet
+S 3550 1350 1900 1500
+U 5E70F175
+F0 "Converter" 50
+F1 "Converter.sch" 50
+F2 "VCC" I L 3550 1650 50 
+F3 "GND" I L 3550 1750 50 
+$EndSheet
+$Sheet
+S 1550 5450 1700 1400
+U 5E712137
+F0 "9V" 50
+F1 "9V.sch" 50
+F2 "VCC" I L 1550 5650 50 
+F3 "+9" I L 1550 5800 50 
+F4 "GND" I L 1550 5950 50 
+$EndSheet
+Wire Wire Line
+	1050 5800 1550 5800
+Wire Wire Line
+	1400 3450 1400 5350
+Wire Wire Line
+	1400 5350 3500 5350
+Wire Wire Line
+	3500 5350 3500 5900
+Wire Wire Line
+	3500 5900 3700 5900
+Wire Wire Line
+	1050 3100 3500 3100
+Wire Wire Line
+	3500 3100 3500 3850
+Wire Wire Line
+	3500 3850 3700 3850
+Wire Wire Line
+	1550 4250 1200 4250
+Wire Wire Line
+	1200 4250 1200 3600
+Wire Wire Line
+	950  3600 950  3650
+Wire Bus Line
+	950  3250 950  3750
+Wire Wire Line
+	950  3600 1200 3600
+$EndSCHEMATC
